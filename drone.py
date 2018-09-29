@@ -7,9 +7,9 @@ cap=cv2.VideoCapture(0)
 while(True):
     ret, frame=cap.read()
 
-    gray=cv2.cvtColor(blurred_frame, cv2.COLOR_BGR2GRAY)
+    gray=cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
-    blurred_frame = cv2.GaussianBlur(frame,(5,5),0)
+    blurred_frame = cv2.GaussianBlur(blurred_frame,(5,5),0)
 
     
 
